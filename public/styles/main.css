@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}
+
+a {
+  text-decoration:none;
+}
+
+.container {
+  text-align: center;
+}
+
+.github {
+  color: white;
+  padding: 0px 20px;
+}
+
+.github:hover {
+  color: gold;
+}
+
+.linkedin {
+  color: white;
+  padding: 0px 20px;
+}
+
+.linkedin:hover {
+  color: gold;
+}
+
+.projects {
+  color: white;
+  padding: 0px 20px;
+}
+
+.projects:hover {
+  color: gold;
+}
+
+.contact {
+  color: white;
+  padding: 0px 20px;
+}
+
+.contact:hover {
+  color: gold;
+}
