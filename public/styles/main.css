@@ -53,3 +53,13 @@ a {
 .contact:hover {
   color: gold;
 }
+
+.resume {
+  color: white;
+  padding: 0px 20px;
+}
+
+.resume:hover {
+  color: gold;
+}
+
