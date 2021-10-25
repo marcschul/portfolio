@@ -57,8 +57,18 @@ $(() => {
     }
   });
 
+  // display bug fix
+  const resetAllDisplay = function() {
+    $(".display-contact").hide();
+    $(".display-linkedin").hide();
+    $(".display-resume").hide();
+    $(".display-projects").hide();
+    $(".display-github").hide();
+  }
+
   // displays github
   $(".fa-github").hover(() => {
+    resetAllDisplay()
     $(".display-github").fadeIn(250);
   }, () => {
     $(".display-github").hide();
@@ -67,6 +77,7 @@ $(() => {
   // displays projects
   $(".fa-folder").hover(() => {
     if (projectState) {
+      resetAllDisplay()
       $(".display-projects").fadeIn(250);
     }
   }, () => {
@@ -75,6 +86,7 @@ $(() => {
 
   // displays resume
   $(".fa-file-pdf").hover(() => {
+    resetAllDisplay()
     $(".display-resume").fadeIn(250);
   }, () => {
     $(".display-resume").hide();
@@ -82,6 +94,7 @@ $(() => {
 
   // displays Linkedin
   $(".fa-linkedin-in").hover(() => {
+    resetAllDisplay()
     $(".display-linkedin").fadeIn(250);
   }, () => {
     $(".display-linkedin").hide();
@@ -89,6 +102,7 @@ $(() => {
 
   // displays contact
   $(".fa-user").hover(() => {
+    resetAllDisplay()
     if (contactState) {
       $(".display-contact").fadeIn(250);
     }
