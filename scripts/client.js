@@ -20,6 +20,7 @@ $(() => {
       projectState = false;
       $(".projects").show(1250);
       $(".project-link").css({color: 'gold'});
+      $(".contact-link").css({color: 'white'});
     } else {
       projectState = true;
       $(".projects").hide(1250);
@@ -39,6 +40,7 @@ $(() => {
       contactState = false;
       $(".contact").show(1250);
       $(".contact-link").css({color: 'gold'});
+      $(".project-link").css({color: 'white'});
     } else {
       contactState = true;
       $(".contact").hide(1250);
