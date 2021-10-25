@@ -2,6 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
@@ -9,79 +10,79 @@ body {
 h1 {
   color: white;
   font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+hr {
+  color: white;
+  width: 325px;
 }
 
 a {
   text-decoration:none;
 }
 
-hr {
-  margin: 15px;
-}
-
 .container {
   text-align: center;
 }
 
-.github {
+.link {
   color: white;
   padding: 0px 20px;
   font-size: 1.5em;
 }
 
-.github:hover {
+.link:hover {
   color: gold;
 }
 
-.linkedin {
+.project-link {
   color: white;
   padding: 0px 20px;
   font-size: 1.5em;
 }
 
-.linkedin:hover {
+.project-link:hover {
   color: gold;
+  cursor: pointer;
 }
 
-.projects {
+.contact-link {
   color: white;
   padding: 0px 20px;
   font-size: 1.5em;
 }
 
-.projects:hover {
+.contact-link:hover {
   color: gold;
+  cursor: pointer;
 }
 
-.contact {
-  color: white;
-  padding: 0px 20px;
-  font-size: 1.5em;
+.mobileShow {
+  display: none;
 }
-
-.contact:hover {
-  color: gold;
-}
-
-.resume {
-  color: white;
-  padding: 0px 20px;
-  font-size: 1.5em;
-}
-
-.mobileShow {display: none;}
 
 .resume:hover {
   color: gold;
 }
 
 @media (max-width: 1024px) {
-
-.mobileShow {
-  font-size: 0.75em;
-  display: inline;
-}
-
-
+  .mobileShow {
+    padding: 5px;
+    font-size: 0.65em;
+    display: inline;
+  }
 }
 
