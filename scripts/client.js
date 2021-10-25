@@ -69,45 +69,45 @@ $(() => {
   // displays github
   $(".fa-github").hover(() => {
     resetAllDisplay()
-    $(".display-github").fadeIn(250);
+    $(".display-github").fadeIn(0);
   }, () => {
-    $(".display-github").hide();
+    resetAllDisplay();
   });
 
   // displays projects
   $(".fa-folder").hover(() => {
     if (projectState) {
       resetAllDisplay()
-      $(".display-projects").fadeIn(250);
+      $(".display-projects").fadeIn(0);
     }
   }, () => {
-    $(".display-projects").hide();
+    resetAllDisplay();
   });
 
   // displays resume
   $(".fa-file-pdf").hover(() => {
     resetAllDisplay()
-    $(".display-resume").fadeIn(250);
+    $(".display-resume").fadeIn(0);
   }, () => {
-    $(".display-resume").hide();
+    resetAllDisplay();
   });
 
   // displays Linkedin
   $(".fa-linkedin-in").hover(() => {
     resetAllDisplay()
-    $(".display-linkedin").fadeIn(250);
+    $(".display-linkedin").fadeIn(0);
   }, () => {
-    $(".display-linkedin").hide();
+    resetAllDisplay();
   });
 
   // displays contact
   $(".fa-user").hover(() => {
     resetAllDisplay()
     if (contactState) {
-      $(".display-contact").fadeIn(250);
+      $(".display-contact").fadeIn(0);
     }
   }, () => {
-    $(".display-contact").hide();
+    resetAllDisplay();
   });
 
 
