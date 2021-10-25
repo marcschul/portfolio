@@ -8,6 +8,7 @@ body {
 
 h1 {
   color: white;
+  font-size: 2.5em;
 }
 
 a {
@@ -25,6 +26,7 @@ hr {
 .github {
   color: white;
   padding: 0px 20px;
+  font-size: 1.5em;
 }
 
 .github:hover {
@@ -34,6 +36,7 @@ hr {
 .linkedin {
   color: white;
   padding: 0px 20px;
+  font-size: 1.5em;
 }
 
 .linkedin:hover {
@@ -43,6 +46,7 @@ hr {
 .projects {
   color: white;
   padding: 0px 20px;
+  font-size: 1.5em;
 }
 
 .projects:hover {
@@ -52,6 +56,7 @@ hr {
 .contact {
   color: white;
   padding: 0px 20px;
+  font-size: 1.5em;
 }
 
 .contact:hover {
@@ -61,6 +66,7 @@ hr {
 .resume {
   color: white;
   padding: 0px 20px;
+  font-size: 1.5em;
 }
 
 .resume:hover {
