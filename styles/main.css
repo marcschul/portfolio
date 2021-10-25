@@ -94,6 +94,14 @@ a {
   color: gold;
 }
 
+.project-link:hover{
+  color: gold;
+}
+
+.gold {
+  color: gold;
+}
+
 @media (max-width: 1024px) {
   .mobileShow {
     font-size: 0.65em;

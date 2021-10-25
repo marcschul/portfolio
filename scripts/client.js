@@ -8,7 +8,7 @@ $(() => {
     $(".display-github").hide();
   }
 
-  $(".projects").hide();
+    $(".projects").hide();
   $(".contact").hide();
   resetAllDisplay();
 
@@ -19,13 +19,13 @@ $(() => {
       projectState = false;
       $(".display-projects").hide();
       $(".projects").show(1250);
-      $(".project-link").css({color: 'gold'});
-      $(".contact-link").css({color: 'white'});
+      $(".project-link").addClass("gold");
+      $(".contact-link").removeClass("gold")
     } else {
       projectState = true;
       $(".display-projects").hide();
       $(".projects").hide(1250);
-      $(".project-link").css({color: 'white'});
+      $(".project-link").removeClass("gold")
     }
 
     if (!contactState) {
@@ -41,13 +41,13 @@ $(() => {
       contactState = false;
       $(".display-contact").hide();
       $(".contact").show(1250);
-      $(".contact-link").css({color: 'gold'});
-      $(".project-link").css({color: 'white'});
+      $(".contact-link").addClass("gold")
+      $(".project-link").removeClass("gold")
     } else {
       contactState = true;
       $(".display-contact").hide();
       $(".contact").hide(1250);
-      $(".contact-link").css({color: 'white'});
+      $(".contact-link").removeClass("gold");
     }
 
     if (!projectState) {
