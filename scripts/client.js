@@ -2,7 +2,13 @@ $(() => {
   $(".projects").hide();
   $(".contact").hide();
   // projects show/hide
+  // true === hidden
+  // false === showing
+  // function needs to hide contacts if showing and projects is clicked
+    // function needs to hide projects if showing and contact is clicked
+
   let projectState = true;
+
   $(".project-link").click(() => {
     if (projectState) {
       projectState = false;
@@ -11,35 +17,29 @@ $(() => {
       projectState = true;
       $(".projects").hide(1250);
     }
+
+    if (!contactState) {
+      contactState = true;
+      $(".contact").hide(1250);
+    }
   })
 
   // contact show/hide
-  let projectContact = true;
+  let contactState = true;
   $(".contact-link").click(() => {
-    if (projectContact) {
-      projectContact = false;
+    if (contactState) {
+      contactState = false;
       $(".contact").show(1250);
     } else {
-      projectContact = true;
+      contactState = true;
       $(".contact").hide(1250);
+    }
+
+    if (!projectState) {
+      projectState = true;
+      $(".projects").hide(1250);
     }
   })
   
 
 })
-
-
-
-// $(document).ready(function() {
-//   let state = true;
-//   $('nav div.column').on("click", function() {
-//     if (state) {
-//       $('form.tweet-form').hide(1000);
-//       state = false;
-//     } else {
-//       $('form.tweet-form').show(1000);
-//       $('#tweet-text').focus();
-//       state = true;
-//     }
-//   });
-// });
