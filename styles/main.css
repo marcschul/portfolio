@@ -96,9 +96,17 @@ a {
 
 @media (max-width: 1024px) {
   .mobileShow {
-    padding: 5px;
     font-size: 0.65em;
     display: inline;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container i{
+    margin: 10px;
   }
 }
 

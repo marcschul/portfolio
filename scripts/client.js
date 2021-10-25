@@ -18,11 +18,13 @@ $(() => {
   $(".project-link").click(() => {
     if (projectState) {
       projectState = false;
+      $(".display-projects").hide();
       $(".projects").show(1250);
       $(".project-link").css({color: 'gold'});
       $(".contact-link").css({color: 'white'});
     } else {
       projectState = true;
+      $(".display-projects").hide();
       $(".projects").hide(1250);
       $(".project-link").css({color: 'white'});
     }
@@ -38,11 +40,13 @@ $(() => {
   $(".contact-link").click(() => {
     if (contactState) {
       contactState = false;
+      $(".display-contact").hide();
       $(".contact").show(1250);
       $(".contact-link").css({color: 'gold'});
       $(".project-link").css({color: 'white'});
     } else {
       contactState = true;
+      $(".display-contact").hide();
       $(".contact").hide(1250);
       $(".contact-link").css({color: 'white'});
     }
@@ -92,7 +96,5 @@ $(() => {
     $(".display-contact").hide();
   });
 
-    
-  
 
 })
