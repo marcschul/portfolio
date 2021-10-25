@@ -1,20 +1,19 @@
 $(() => {
+
+  const resetAllDisplay = function() {
+    $(".display-contact").hide();
+    $(".display-linkedin").hide();
+    $(".display-resume").hide();
+    $(".display-projects").hide();
+    $(".display-github").hide();
+  }
+
   $(".projects").hide();
   $(".contact").hide();
-  $(".display-github").hide();
-  $(".display-projects").hide();
-  $(".display-resume").hide();
-  $(".display-linkedin").hide();
-  $(".display-contact").hide();
-
-  // true === hidden
-  // false === showing
-  // function needs to hide contacts if showing and projects is clicked
-    // function needs to hide projects if showing and contact is clicked
+  resetAllDisplay();
 
   // projects show/hide
   let projectState = true;
-
   $(".project-link").click(() => {
     if (projectState) {
       projectState = false;
@@ -56,15 +55,6 @@ $(() => {
       $(".projects").hide(1250);
     }
   });
-
-  // display bug fix
-  const resetAllDisplay = function() {
-    $(".display-contact").hide();
-    $(".display-linkedin").hide();
-    $(".display-resume").hide();
-    $(".display-projects").hide();
-    $(".display-github").hide();
-  }
 
   // displays github
   $(".fa-github").hover(() => {
