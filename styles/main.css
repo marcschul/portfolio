@@ -28,6 +28,7 @@ h3 {
 hr {
   color: white;
   width: 325px;
+  margin-top: 25px;
 }
 
 a {
@@ -76,6 +77,10 @@ a {
 
 .resume:hover {
   color: gold;
+}
+
+.display-wrapper {
+  height: 75px;
 }
 
 @media (max-width: 1024px) {
