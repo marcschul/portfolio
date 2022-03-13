@@ -1,2 +1,2 @@
 # portfolio
-A repository for Marc Schulmeister's portfolio
+A repository for Marc Schulmeister's portfolio.
