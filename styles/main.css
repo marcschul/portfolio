@@ -20,8 +20,8 @@ h2 {
 }
 
 h3 {
-  color: white;
-  font-size: 1em;
+  color: gold;
+  font-size: 0.75em;
   text-align: center;
 }
 
@@ -107,7 +107,7 @@ a {
 }
 
 p {
-  color: gray;
+  color: white;
   text-align: center;
 }
 
@@ -124,5 +124,9 @@ p {
 
   .container i {
     margin: 10px;
+  }
+
+  .projects {
+    max-width: 100%;
   }
 }
