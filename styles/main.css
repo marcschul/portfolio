@@ -4,7 +4,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 h1 {
@@ -32,7 +32,7 @@ hr {
 }
 
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .container {
@@ -83,6 +83,10 @@ a {
   height: 75px;
 }
 
+.projects {
+  max-width: 20%;
+}
+
 .projects a {
   display: flex;
   justify-content: center;
@@ -94,12 +98,17 @@ a {
   color: gold;
 }
 
-.project-link:hover{
+.project-link:hover {
   color: gold;
 }
 
 .gold {
   color: gold;
+}
+
+p {
+  color: gray;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -113,8 +122,7 @@ a {
     flex-direction: column;
   }
 
-  .container i{
+  .container i {
     margin: 10px;
   }
 }
-
