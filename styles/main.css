@@ -156,6 +156,12 @@ p {
   display: flex;
 }
 
+.hr-projects {
+  width: 97%;
+  margin: 0px;
+  margin-bottom: 1em;
+}
+
 @media (max-width: 1024px) {
   .mobileShow {
     font-size: 0.65em;
