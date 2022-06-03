@@ -144,6 +144,10 @@ p {
   width: 100%;
 }
 
+.project-container:hover {
+  border: solid 1px gold;
+}
+
 .project-title {
   padding-bottom: 0.2em;
 }
