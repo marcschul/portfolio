@@ -27,12 +27,20 @@ h3 {
 
 hr {
   color: white;
-  width: 325px;
+  width: 275px;
   margin-top: 25px;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.img {
+  text-align: center;
 }
 
 .container {
@@ -84,6 +92,9 @@ a {
 }
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 20%;
 }
 
@@ -109,6 +120,33 @@ a {
 p {
   color: white;
   text-align: center;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px white;
+  padding: 0px 5px;
+}
+
+.github-footer {
+  font-size: 0.75em;
+}
+
+.project-container {
+  border: solid 1px white;
+  border-radius: 5%;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 275px;
+  width: 100%;
+}
+
+.project-title {
+  padding-bottom: 0.2em;
 }
 
 @media (max-width: 1024px) {

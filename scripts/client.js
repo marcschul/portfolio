@@ -1,14 +1,13 @@
 $(() => {
-
-  const resetAllDisplay = function() {
+  const resetAllDisplay = function () {
     $(".display-contact").hide();
     $(".display-linkedin").hide();
     $(".display-resume").hide();
     $(".display-projects").hide();
     $(".display-github").hide();
-  }
+  };
 
-    $(".projects").hide();
+  $(".projects").hide();
   $(".contact").hide();
   resetAllDisplay();
 
@@ -20,12 +19,12 @@ $(() => {
       $(".display-projects").hide();
       $(".projects").show(1250);
       $(".project-link").addClass("gold");
-      $(".contact-link").removeClass("gold")
+      $(".contact-link").removeClass("gold");
     } else {
       projectState = true;
       $(".display-projects").hide();
       $(".projects").hide(1250);
-      $(".project-link").removeClass("gold")
+      $(".project-link").removeClass("gold");
     }
 
     if (!contactState) {
@@ -41,8 +40,8 @@ $(() => {
       contactState = false;
       $(".display-contact").hide();
       $(".contact").show(1250);
-      $(".contact-link").addClass("gold")
-      $(".project-link").removeClass("gold")
+      $(".contact-link").addClass("gold");
+      $(".project-link").removeClass("gold");
     } else {
       contactState = true;
       $(".display-contact").hide();
@@ -57,48 +56,61 @@ $(() => {
   });
 
   // displays github
-  $(".fa-github").hover(() => {
-    resetAllDisplay()
-    $(".display-github").fadeIn(0);
-  }, () => {
-    resetAllDisplay();
-  });
+  $(".fa-github-hover").hover(
+    () => {
+      resetAllDisplay();
+      $(".display-github").fadeIn(0);
+    },
+    () => {
+      resetAllDisplay();
+    }
+  );
 
   // displays projects
-  $(".fa-folder").hover(() => {
-    if (projectState) {
-      resetAllDisplay()
-      $(".display-projects").fadeIn(0);
+  $(".fa-folder").hover(
+    () => {
+      if (projectState) {
+        resetAllDisplay();
+        $(".display-projects").fadeIn(0);
+      }
+    },
+    () => {
+      resetAllDisplay();
     }
-  }, () => {
-    resetAllDisplay();
-  });
+  );
 
   // displays resume
-  $(".fa-file-pdf").hover(() => {
-    resetAllDisplay()
-    $(".display-resume").fadeIn(0);
-  }, () => {
-    resetAllDisplay();
-  });
+  $(".fa-file-pdf").hover(
+    () => {
+      resetAllDisplay();
+      $(".display-resume").fadeIn(0);
+    },
+    () => {
+      resetAllDisplay();
+    }
+  );
 
   // displays Linkedin
-  $(".fa-linkedin-in").hover(() => {
-    resetAllDisplay()
-    $(".display-linkedin").fadeIn(0);
-  }, () => {
-    resetAllDisplay();
-  });
+  $(".fa-linkedin-in").hover(
+    () => {
+      resetAllDisplay();
+      $(".display-linkedin").fadeIn(0);
+    },
+    () => {
+      resetAllDisplay();
+    }
+  );
 
   // displays contact
-  $(".fa-user").hover(() => {
-    resetAllDisplay()
-    if (contactState) {
-      $(".display-contact").fadeIn(0);
+  $(".fa-user").hover(
+    () => {
+      resetAllDisplay();
+      if (contactState) {
+        $(".display-contact").fadeIn(0);
+      }
+    },
+    () => {
+      resetAllDisplay();
     }
-  }, () => {
-    resetAllDisplay();
-  });
-
-
-})
+  );
+});
